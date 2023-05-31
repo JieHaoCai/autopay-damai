@@ -1,0 +1,23 @@
+accounts:
+    # .damai.cn中的cookie字符串
+    - cookie: "cna=TIfoHLZzxB4CAXQXcuZ/WvhP; XSRF-TOKEN=a654ec69-993f-4e8c-8dab-5318baa60cc7; xlly_s=1; _samesite_flag_=true; cookie2=1a3df84aea2aec711220cac7bb51a8fb; t=cb3f9c00431db7809b1a100e225d49b7; _tb_token_=f7d0173e5ef7d; _hvn_login=18; munb=2200617654874; csg=48dfcc22; damai.cn_nickName=%E9%BA%A6%E5%AD%9001z11; damai.cn_user=VCrXz7z/sHPY3kp/5EOUlGkZzmyj/eIb5xUM0uFP+dGq0wK0ZnK4bE7dWKKwO26jGxb2+Rjuqig=; damai.cn_user_new=VCrXz7z%2FsHPY3kp%2F5EOUlGkZzmyj%2FeIb5xUM0uFP%2BdGq0wK0ZnK4bE7dWKKwO26jGxb2%2BRjuqig%3D; h5token=ac3a09dd11114c0986f82964152d20cf_1_1; damai_cn_user=VCrXz7z%2FsHPY3kp%2F5EOUlGkZzmyj%2FeIb5xUM0uFP%2BdGq0wK0ZnK4bE7dWKKwO26jGxb2%2BRjuqig%3D; loginkey=ac3a09dd11114c0986f82964152d20cf_1_1; user_id=120709904; _m_h5_tk=9e75c1b419c308193dd72d855cddf080_1685505583254; _m_h5_tk_enc=7932a8fa2e25e0ce0f5ec2968e7fc173; isg=BMTEu5HhfMH_vciNKhhetw60lUK23ehHUN4ERd5gXg56CWHTAu0b19DoSaHRESCf; l=fBajxZHVNwX7ldSdBO5Zhurza77OiCOfCsPzaNbMiIEGa6ZNNLm3KNC_zKAXldtjgTff6FtPZRBMcdepJBUd0c663GEuaaSXQcJB-bpU-L5..; tfstk=cisCBNVNpXcCPMqoxBwNcH8-iztVahDXFyOhdSNi5kP3xA6k6sXZ0ItpdacJ4Lp1."
+      remark: 账号1
+      # 抢票轮训间隔, 单位毫秒
+      interval: 30
+
+      # 最早提前多少毫秒发包。 开抢剩余时间戳 = 开始售票的时间戳 - 当前时间戳。 当开抢剩余时间戳时间小于 submit_time时, 开始发送数据包。
+      earliest_submit_time: 15
+
+      ticket:
+        # 需要抢购的门票ID, 门票详情页URL中的itemId.如:https://m.damai.cn/damai/detail/item.html?utm=&itemId=710947802955
+        id: "718335834447"
+        # 需要抢购的门票数量
+        num: 1
+        # 需要抢购的场次序号.
+        sessions: 1
+        # 需要抢购的票档序号
+        grade: 1
+
+
+
+        
